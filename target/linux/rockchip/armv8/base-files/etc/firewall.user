@@ -1,0 +1,3 @@
+WAN='eth0'
+iptables -A input_rule -i $WAN -p tcp --dport 80 -j ACCEPT
+iptables -A input_rule -i $WAN -p tcp --dport 22 -j ACCEPT
